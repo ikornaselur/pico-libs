@@ -9,8 +9,8 @@ lib: .pyboard.py
 
 deploy_shift: lib
 	@echo "Deploying SN74HC595N library to /lib"
-	@$(PYB) -f cp shift/shift.py :lib/shift.py
+	@$(PYB) -f cp src/sn74hc595n/shift.py :lib/shift.py
 
 deploy_dht: lib
 	@echo "Deploying DHT11 library to /lib"
-	@$(PYB) -f cp dht/dht.py :lib/dht.py
+	@$(PYB) -f cp src/dht11/dht.py :lib/dht.py
